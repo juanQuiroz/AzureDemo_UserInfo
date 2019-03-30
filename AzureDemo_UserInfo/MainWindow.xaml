@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Prueba Azure MySQL" Height="482.363" Width="647.431">
     <Grid Background="#FFF7F7F7">
-        <TextBox x:Name="txtCodigo" HorizontalAlignment="Left" Height="23" Margin="31,56,0,0" TextWrapping="Wrap" Text="Buscar" VerticalAlignment="Top" Width="317" Foreground="#FFBFBFBF" FontFamily="Caviar Dreams" FontSize="16" BorderThickness="0"/>
+        <TextBox x:Name="txtCodigo" HorizontalAlignment="Left" Height="23" Margin="31,56,0,0" TextWrapping="Wrap" Text="Buscar" VerticalAlignment="Top" Width="317" Foreground="#FFBFBFBF" FontFamily="Caviar Dreams" FontSize="16" BorderThickness="0" TextChanged="txtCodigo_TextChanged" MouseEnter="txtCodigo_MouseEnter" MouseLeave="txtCodigo_MouseLeave"/>
         <Button Content="Buscar" HorizontalAlignment="Left" Margin="375,56,0,0" VerticalAlignment="Top" Width="84" Height="23" Background="#FF59C9FD" BorderBrush="#FF59C9FD" Foreground="White" FontFamily="Caviar Dreams" FontWeight="Bold" FontSize="14" Click="Button_Click_1"/>
         <Image x:Name="userImg" HorizontalAlignment="Left" Height="175" Margin="31,181,0,0" VerticalAlignment="Top" Width="172" RenderTransformOrigin="0.492,0.512" Source="img/user.png"/>
         <Button Content="Limpiar" HorizontalAlignment="Left" Margin="486,56,0,0" VerticalAlignment="Top" Width="126" Height="23" Background="#FF59C9FD" BorderBrush="#FF59C9FD" Foreground="White" FontFamily="Caviar Dreams" FontWeight="Bold" FontSize="14" Click="Button_Click"/>

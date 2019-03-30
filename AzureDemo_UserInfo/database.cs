@@ -18,7 +18,7 @@ namespace AzureDemo_UserInfo
 
         public database()
         {
-            cadena = "Server=midemoserver.mysql.database.azure.com; Port=3306; Database=db_azurePrueba; Uid=myadmin@midemoserver; Pwd=Leobbsita97; SslMode=Preferred;";
+            cadena = "Server=tcp:serverpruebasqldatabase.database.windows.net,1433;Initial Catalog=db_pruebaSQLDatabase;Persist Security Info=False;User ID=myadmin;Password=Leobbsita97;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
             conexion = new SqlConnection(cadena);
         }
 
