@@ -35,13 +35,16 @@ namespace AzureDemo_UserInfo
             txtP1.Clear();
             txtP2.Clear();
             txtP3.Clear();
+
+            userImg.Source = new BitmapImage(new Uri(@"img/user.png", UriKind.RelativeOrAbsolute));
+
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             database bd = new database();
             bd.conexion.Open();
-            MessageBox.Show("Conexion exitosa");
+            
 
             SqlCommand cmd = bd.conexion.CreateCommand();
 
@@ -65,6 +68,21 @@ namespace AzureDemo_UserInfo
      
             }
 
+            if(txtCodigo.Text == "001")
+            {
+                userImg.Source = new BitmapImage(new Uri(@"img/leo.jpg", UriKind.RelativeOrAbsolute));
+            }
+            if (txtCodigo.Text == "002")
+            {
+                userImg.Source = new BitmapImage(new Uri(@"img/miguel.jpg", UriKind.RelativeOrAbsolute));
+            }
+            if (txtCodigo.Text == "003")
+            {
+                userImg.Source = new BitmapImage(new Uri(@"img/juan.jpg", UriKind.RelativeOrAbsolute));
+            }
+
+
+
             bd.conexion.Close();
 
         }
@@ -83,7 +101,7 @@ namespace AzureDemo_UserInfo
         {
             if(txtCodigo.Text == "")
             {
-                txtCodigo.Text = "Buscar";
+                txtCodigo.Text = "Codigo de usuario";
             }
         }
     }

@@ -5,24 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AzureDemo_UserInfo"
         mc:Ignorable="d"
-        Title="Prueba Azure MySQL" Height="482.363" Width="647.431">
-    <Grid Background="#FFF7F7F7">
-        <TextBox x:Name="txtCodigo" HorizontalAlignment="Left" Height="23" Margin="31,56,0,0" TextWrapping="Wrap" Text="Buscar" VerticalAlignment="Top" Width="317" Foreground="#FFBFBFBF" FontFamily="Caviar Dreams" FontSize="16" BorderThickness="0" TextChanged="txtCodigo_TextChanged" MouseEnter="txtCodigo_MouseEnter" MouseLeave="txtCodigo_MouseLeave"/>
-        <Button Content="Buscar" HorizontalAlignment="Left" Margin="375,56,0,0" VerticalAlignment="Top" Width="84" Height="23" Background="#FF59C9FD" BorderBrush="#FF59C9FD" Foreground="White" FontFamily="Caviar Dreams" FontWeight="Bold" FontSize="14" Click="Button_Click_1"/>
-        <Image x:Name="userImg" HorizontalAlignment="Left" Height="175" Margin="31,181,0,0" VerticalAlignment="Top" Width="172" RenderTransformOrigin="0.492,0.512" Source="img/user.png"/>
-        <Button Content="Limpiar" HorizontalAlignment="Left" Margin="486,56,0,0" VerticalAlignment="Top" Width="126" Height="23" Background="#FF59C9FD" BorderBrush="#FF59C9FD" Foreground="White" FontFamily="Caviar Dreams" FontWeight="Bold" FontSize="14" Click="Button_Click"/>
-        <Label Content="Nombres:" HorizontalAlignment="Left" Margin="248,181,0,0" VerticalAlignment="Top" FontFamily="Caviar Dreams" FontSize="16" FontWeight="Bold"/>
-        <Label Content="Apellidos:" HorizontalAlignment="Left" Margin="248,215,0,0" VerticalAlignment="Top" FontFamily="Caviar Dreams" FontSize="16" FontWeight="Bold"/>
-        <Label Content="DNI:" HorizontalAlignment="Left" Margin="248,249,0,0" VerticalAlignment="Top" FontFamily="Caviar Dreams" FontSize="16" FontWeight="Bold"/>
-        <Label Content="Perfil 1:" HorizontalAlignment="Left" Margin="248,283,0,0" VerticalAlignment="Top" FontFamily="Caviar Dreams" FontSize="16" FontWeight="Bold"/>
-        <Label Content="Perfil 2:" HorizontalAlignment="Left" Margin="248,317,0,0" VerticalAlignment="Top" FontFamily="Caviar Dreams" FontSize="16" FontWeight="Bold"/>
-        <Label Content="Perfil 3:" HorizontalAlignment="Left" Margin="248,351,0,0" VerticalAlignment="Top" FontFamily="Caviar Dreams" FontSize="16" FontWeight="Bold"/>
-        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="23" Margin="375,187,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="237" FontFamily="Caviar Dreams" FontSize="18" Background="White" BorderThickness="0" ClipToBounds="True" Foreground="#FF1F1F1F" RenderTransformOrigin="0,0"/>
-        <TextBox x:Name="txtApellido" HorizontalAlignment="Left" Height="23" Margin="375,221,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="237" FontFamily="Caviar Dreams" FontSize="18" Background="White" BorderThickness="0" ClipToBounds="True" Foreground="#FF1F1F1F" RenderTransformOrigin="0,0"/>
-        <TextBox x:Name="txtDNI" HorizontalAlignment="Left" Height="23" Margin="375,255,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="237" FontFamily="Caviar Dreams" FontSize="18" Background="White" BorderThickness="0" ClipToBounds="True" Foreground="#FF1F1F1F" RenderTransformOrigin="0,0"/>
-        <TextBox x:Name="txtP1" HorizontalAlignment="Left" Height="23" Margin="375,289,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="237" FontFamily="Caviar Dreams" FontSize="18" Background="White" BorderThickness="0" ClipToBounds="True" Foreground="#FF1F1F1F" RenderTransformOrigin="0,0"/>
-        <TextBox x:Name="txtP2" HorizontalAlignment="Left" Height="23" Margin="375,323,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="237" FontFamily="Caviar Dreams" FontSize="18" Background="White" BorderThickness="0" ClipToBounds="True" Foreground="#FF1F1F1F" RenderTransformOrigin="0,0"/>
-        <TextBox x:Name="txtP3" HorizontalAlignment="Left" Height="23" Margin="375,357,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="237" FontFamily="Caviar Dreams" FontSize="18" Background="White" BorderThickness="0" ClipToBounds="True" Foreground="#FF1F1F1F" RenderTransformOrigin="0,0"/>
+        Title="Perfiles de Consumo Falabella" Height="482.363" Width="647.431"
+        Icon="img/icon.ico">
+    <Grid Background="#FFF7F7F7" Margin="-1,-3,1,3">
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="112" Stroke="White" VerticalAlignment="Top" Width="639"/>
+        <TextBox x:Name="txtCodigo" HorizontalAlignment="Left" Height="23" Margin="31,56,0,0" TextWrapping="Wrap" Text="Codigo de usuario" VerticalAlignment="Top" Width="317" Foreground="#FFBFBFBF" FontFamily="Caviar Dreams" FontSize="16" BorderThickness="0,0,0,2" TextChanged="txtCodigo_TextChanged" MouseEnter="txtCodigo_MouseEnter" MouseLeave="txtCodigo_MouseLeave" Opacity="0.995" ClipToBounds="True" BorderBrush="#FF227FAE"/>
+        <Button Content="Buscar" HorizontalAlignment="Left" Margin="375,49,0,0" VerticalAlignment="Top" Width="106" Height="34" Background="White" BorderBrush="#FF227FAE" Foreground="#FF726A6A" FontFamily="Caviar Dreams" FontWeight="Bold" FontSize="14" Click="Button_Click_1" BorderThickness="2"/>
+        <Image x:Name="userImg" HorizontalAlignment="Left" Height="175" Margin="57,216,0,0" VerticalAlignment="Top" Width="138" RenderTransformOrigin="0.492,0.512" Source="img/user.png" Stretch="Fill"/>
+        <Button Content="Limpiar" HorizontalAlignment="Left" Margin="486,49,0,0" VerticalAlignment="Top" Width="115" Height="34" Background="White" BorderBrush="#FF227FAE" Foreground="#FF726A6A" FontFamily="Caviar Dreams" FontWeight="Bold" FontSize="14" Click="Button_Click" BorderThickness="2"/>
+        <Label Content="Nombres:" HorizontalAlignment="Left" Margin="248,216,0,0" VerticalAlignment="Top" FontFamily="Caviar Dreams" FontSize="16" FontWeight="Bold"/>
+        <Label Content="Apellidos:" HorizontalAlignment="Left" Margin="248,250,0,0" VerticalAlignment="Top" FontFamily="Caviar Dreams" FontSize="16" FontWeight="Bold"/>
+        <Label Content="DNI:" HorizontalAlignment="Left" Margin="248,284,0,0" VerticalAlignment="Top" FontFamily="Caviar Dreams" FontSize="16" FontWeight="Bold"/>
+        <Label Content="Perfil 1:" HorizontalAlignment="Left" Margin="248,318,0,0" VerticalAlignment="Top" FontFamily="Caviar Dreams" FontSize="16" FontWeight="Bold" Foreground="#FF3C8DD1"/>
+        <Label Content="Perfil 2:" HorizontalAlignment="Left" Margin="248,352,0,0" VerticalAlignment="Top" FontFamily="Caviar Dreams" FontSize="16" FontWeight="Bold" Foreground="#FF3C8DD1"/>
+        <Label Content="Perfil 3:" HorizontalAlignment="Left" Margin="248,386,0,0" VerticalAlignment="Top" FontFamily="Caviar Dreams" FontSize="16" FontWeight="Bold" Foreground="#FF3C8DD1"/>
+        <TextBox x:Name="txtNombre" HorizontalAlignment="Left" Height="23" Margin="375,222,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="237" FontFamily="Caviar Dreams" FontSize="16" Background="White" BorderThickness="0" ClipToBounds="True" Foreground="#FF1F1F1F" RenderTransformOrigin="0,0"/>
+        <TextBox x:Name="txtApellido" HorizontalAlignment="Left" Height="23" Margin="375,256,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="237" FontFamily="Caviar Dreams" FontSize="16" Background="White" BorderThickness="0" ClipToBounds="True" Foreground="#FF1F1F1F" RenderTransformOrigin="0,0"/>
+        <TextBox x:Name="txtDNI" HorizontalAlignment="Left" Height="23" Margin="375,290,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="237" FontFamily="Caviar Dreams" FontSize="16" Background="White" BorderThickness="0" ClipToBounds="True" Foreground="#FF1F1F1F" RenderTransformOrigin="0,0"/>
+        <TextBox x:Name="txtP1" HorizontalAlignment="Left" Height="23" Margin="375,324,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="237" FontFamily="Caviar Dreams" FontSize="16" Background="White" BorderThickness="0" ClipToBounds="True" Foreground="#FF1F1F1F" RenderTransformOrigin="0,0"/>
+        <TextBox x:Name="txtP2" HorizontalAlignment="Left" Height="23" Margin="375,358,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="237" FontFamily="Caviar Dreams" FontSize="16" Background="White" BorderThickness="0" ClipToBounds="True" Foreground="#FF1F1F1F" RenderTransformOrigin="0,0"/>
+        <TextBox x:Name="txtP3" HorizontalAlignment="Left" Height="23" Margin="375,392,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="237" FontFamily="Caviar Dreams" FontSize="16" Background="White" BorderThickness="0" ClipToBounds="True" Foreground="#FF1F1F1F" RenderTransformOrigin="0,0"/>
+        <Label Content="Informacion de Cliente" HorizontalAlignment="Left" Margin="31,142,0,0" VerticalAlignment="Top" FontFamily="Caviar Dreams" FontSize="24" FontWeight="Bold"/>
+
 
 
     </Grid>

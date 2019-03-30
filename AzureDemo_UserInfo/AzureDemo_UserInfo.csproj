@@ -162,6 +162,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="img\icon.ico" />
+    <Resource Include="img\juan.jpg" />
+    <Resource Include="img\leo.jpg" />
+    <Resource Include="img\miguel.jpg" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>
